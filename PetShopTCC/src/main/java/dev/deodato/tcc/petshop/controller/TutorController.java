@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class CadastroController {
+public class TutorController {
 
     @GetMapping("/cadastro")
     public String boasVindas() {
