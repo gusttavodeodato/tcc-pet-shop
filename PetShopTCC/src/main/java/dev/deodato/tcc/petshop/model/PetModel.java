@@ -1,9 +1,15 @@
-package dev.deodato.tcc.petshop.model;
+package model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_pets")
 public class PetModel {
@@ -25,31 +31,4 @@ public class PetModel {
     )
     private List<TutorModel> tutores;
 
-    public PetModel() {
-
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
-
-    public List<TutorModel> getTutores() {
-        return tutores;
-    }
-
-    public void setTutores(List<TutorModel> tutores) {
-        this.tutores = tutores;
-    }
 }

@@ -1,4 +1,4 @@
-package dev.deodato.tcc.petshop.model;
+package model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
