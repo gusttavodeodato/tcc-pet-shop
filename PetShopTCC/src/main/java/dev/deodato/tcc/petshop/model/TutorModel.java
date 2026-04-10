@@ -1,4 +1,4 @@
-package model;
+package dev.deodato.tcc.petshop.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,6 +27,6 @@ public class TutorModel {
 
     // muitos donos para varios pets
     @ManyToMany(mappedBy = "tutores")
-    private List<PetModel> pets;
+    private List<PetModel> pet;
 
 }
